@@ -30,7 +30,7 @@ function HomePage() {
   }, []);
 
   const fetchAllCountries = () => {
-    axios.get(`http://localhost:3021/countries`)
+    axios.get(`https://countriapi-server.onrender.com/countries`)
       .then(response => {
         setAllCountries(response.data);
         setCountries(response.data);
@@ -44,7 +44,7 @@ function HomePage() {
   const fetchCountriesByName = () => {
     console.log("Search query:", search);
     if (search) {
-      axios.get(`http://localhost:3021/search-countries/${search}`)
+      axios.get(`https://countriapi-server.onrender.com/search-countries/${search}`)
         .then(response => {
           setCountries(response.data);
         })

@@ -199,7 +199,7 @@ span {
   /* Отступы внутри пунктов */
 }
 
-Скрываем стрелку по умолчанию и добавляем свою */ .filter::after {
+ .filter::after {
   content: '\25BC';
   position: absolute;
   top: 50%;

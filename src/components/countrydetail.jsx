@@ -25,7 +25,7 @@ const CountryDetail = () => {
     useEffect(() => {
         const fetchCountry = async () => {
             try {
-                const response = await axios.get(`http://localhost:3021/country/${countryName}`);
+                const response = await axios.get(`https://countriapi-server.onrender.com/country/${countryName}`);
                 setCountry(response.data); // Предполагаем, что данные страны приходят в нужном формате
                 setLoading(false);
             } catch (error) {
