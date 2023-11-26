@@ -1,21 +1,30 @@
+require('dotenv').config();
+
 const express = require('express');
 const axios = require('axios');
 const morgan = require('morgan');
 const app = express();
 const port = 3021; 
 const cors = require('cors');
-require('dotenv').config();
+
 
 const knex = require('knex')({
     client: 'pg',
-  connection: {
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_DATABASE,
-    ssl: { rejectUnauthorized: process.env.DB_SSL_REJECT_UNAUTHORIZED === 'true' }
+    connection: {
+      host: 'cornelius.db.elephantsql.com',
+      user: 'elbfiblz',
+      password: 'vvbGYZwGSRuw5Dh9SBUqn49OXM55pQ1Y',
+      database: 'elbfiblz',
+      ssl: { rejectUnauthorized: false }
     }});
 
+    console.log({
+        host: process.env.DB_HOST,
+        user: process.env.DB_USER,
+        password: process.env.DB_PASSWORD,
+        database: process.env.DB_DATABASE,
+        ssl: process.env.DB_SSL_REJECT_UNAUTHORIZED,
+      });
 
 
 

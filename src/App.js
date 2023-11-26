@@ -5,6 +5,7 @@ import CountryDetail from './components/countrydetail';
 import Navbar from './components/header';
 import { DarkModeProvider } from './components/darkmodecontext';
 
+
 function App() {
   return (
     <DarkModeProvider>
