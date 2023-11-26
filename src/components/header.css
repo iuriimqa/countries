@@ -1,0 +1,54 @@
+/* Основной контейнер */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+
+
+.navbar {
+    background-color: #ffffff; /* или другой цвет */
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень навбара */
+    font-family: sans-serif;
+}
+
+.dark-mode {
+    background-color:hsl(209, 23%, 22%); /* Тёмный фон */
+    color: hsl(0, 0%, 100%); /* Светлый текст */
+  }
+  
+  .dark-mode .navbar {
+    background-color: hsl(209, 23%, 22%); /* Тёмный фон для навигационной панели */
+
+  }
+  
+  /* Дополнительные стили для других элементов в тёмном режиме */
+  
+
+/* Заголовок */
+.navbar h1 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Кнопка Dark Mode */
+button.dark-mode-btn {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button.dark-mode-btn.dark-mode{
+    color: #fff;
+}
+
+.dark-mode-btn svg { /* Иконка (если используется SVG) */
+    fill: white; /* или другой цвет */
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; /* Отступ между иконкой и текстом */
+}

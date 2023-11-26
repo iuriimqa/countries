@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+
+
+.html{
+  background-color:hsl(0, 0%, 98%) ;
+}
+.html.dark-mode{
+  background-color:hsl(207, 26%, 17%) ;
+}
+
+.container {
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 60px;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+
+
+
+.search-bar {
+  margin-top: 20px;
+  margin-left: 43px;
+  margin-bottom: 20px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar.dark-mode {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+
+.input {
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-right: 10px;
+  flex-grow: 1;
+}
+
+.input.dark-mode {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 52%);
+}
+
+.search-icon {
+  cursor: pointer;
+  margin-left: 15px;
+  color: black
+}
+
+.country-card {
+  color: hsl(200, 15%, 8%);
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 0;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.country-card.dark-mode {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .country-card {
+    width: 21%;
+  }
+}
+
+#pic {
+  width: 100%;
+  height: 155px;
+  object-fit: fill;
+
+}
+
+.small {
+  padding: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 10px;
+  padding: 30px;
+}
+
+span {
+  font-weight: bold;
+}
+
+
+
+
+.filter select {
+  padding: 15px 20px;
+  /* Отступы внутри select */
+  background-color: hsl(0, 0%, 100%);
+  /* Белый фон */
+  border: none;
+  /* Убрать границу */
+  border-radius: 5px;
+  /* Скругление углов */
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.05);
+  /* Тень для выпадающего списка */
+  appearance: none;
+  /* Убрать стандартный вид для select */
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  font-size: 14px;
+  /* Размер шрифта */
+  color: hsl(200, 15%, 8%);
+  /* Цвет шрифта */
+  cursor: pointer;
+  /* Курсор в виде указателя */
+}
+
+.filter::after {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  /* Стрелка не будет взаимодействовать с курсором */
+  color: hsl(200, 15%, 8%);
+  /* Цвет стрелки */
+  -webkit-appearance: none;
+  /* Для Safari и Chrome */
+  -moz-appearance: none;
+  /* Для Firefox */
+  appearance: none;
+}
+
+/* Стиль для option */
+.filter select option {
+  padding: 10px;
+  /* Отступы внутри option */
+  background-color: hsl(0, 0%, 100%);
+  /* Белый фон */
+  color: hsl(200, 15%, 8%);
+  /* Цвет текста */
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+  .filter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-bar {
+    width: 90%;
+    margin: 10px;
+  }
+
+  .region-select {
+    /* Additional styles to make the dropdown full width if necessary */
+    width: 100%;
+    margin-top: 10px;
+    /* Add some space between the elements */
+    margin-left: 0;
+  }
+}
+
+.filter select {
+  /* Прежние стили */
+  position: relative;
+  width: 200px;
+  /* Или другая фиксированная ширина, если нужно */
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Остальные стили */
+}
+
+/* Стиль для пунктов select */
+.filter select option {
+  color: #000;
+  /* Черный текст для пунктов */
+  background: white;
+  /* Белый фон для пунктов */
+  padding: 10px;
+  /* Отступы внутри пунктов */
+}
+
+Скрываем стрелку по умолчанию и добавляем свою */ .filter::after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #444;
+  -webkit-appearance: none;
+  /* Для Safari и Chrome */
+  -moz-appearance: none;
+  /* Для Firefox */
+  appearance: none;
+}
+
+/* Позиционирование фильтра и поиска в одной линии */
+.search-and-filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  -webkit-appearance: none;
+  /* Для Safari и Chrome */
+  -moz-appearance: none;
+  /* Для Firefox */
+  appearance: none;
+}
+
+
+
+/* Стиль для контейнера фильтра, если вы хотите использовать flexbox */
+.filter {
+  /* Прежние стили */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-appearance: none;
+  /* Для Safari и Chrome */
+  -moz-appearance: none;
+  /* Для Firefox */
+  appearance: none;
+
+}
+
+.region-select {
+  margin-bottom: 20px;
+  margin-right: 75px;
+  margin-top: 20px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -webkit-appearance: none;
+  /* Для Safari и Chrome */
+  -moz-appearance: none;
+  /* Для Firefox */
+  appearance: none;
+}
+
+.region-select.dark-mode {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 52%);
+}
+
+.dropdown-item {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 5px 10px;
+  -webkit-appearance: none;
+  /* Для Safari и Chrome */
+  -moz-appearance: none;
+  /* Для Firefox */
+  appearance: none;
+}
+
+.container.dark-mode {
+  background-color: hsl(207, 26%, 17%)
+}

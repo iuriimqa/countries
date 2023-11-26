@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+
+
+.html{
+  background-color:hsl(0, 0%, 98%) ;
+  font-family: Nunito Sans,sans-serif;
+}
+.html.dark-mode{
+  background-color:hsl(207, 26%, 17%) ;
+}
+
+
+.container {
+  background-color: hsl(0, 0%, 98%);
+  margin: 0;
+  padding: 0;
+  max-height:100%;
+  max-width: 100%;
+  margin-top:50px;
+}
+
+.container.darkmode {
+  background-color: hsl(207, 26%, 17%);
+  color: hsl(0, 0%, 100%);
+
+}
+
+.country-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30, 7, 30, 7;
+  max-width: 100%;
+  margin: 20px;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.country-detail.dark-mode {
+  background-color: hsl(207, 26%, 17%);
+}
+
+.country-flag img {
+  display: block;
+  /* Убедитесь, что изображение не имеет встроенных отступов */
+  width: 400px;
+  /* Ширина изображения флага */
+  height: 300px;
+  object-fit: fill;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.country-info {
+  max-width: 50%;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 60px;
+}
+
+.country-info h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.country-stats {
+  display: flex;
+  flex: content;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+}
+
+.country-stats p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.country-borders {
+  text-align: center;
+}
+
+.borders-list {
+  display: inline-flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#border {
+  text-align: center;
+}
+
+.borders-list button {
+  padding: 5px 15px;
+  background-color: #f7f7f7;
+  /* Цвет фона кнопок */
+  border: 1px solid #ddd;
+  /* Цвет границы кнопок */
+  border-radius: 5px;
+  /* Скругление углов кнопок */
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+/* Добавьте медиа-запросы для адаптивного дизайна */
+@media (max-width: 768px) {
+  .container{
+    margin: 0;
+    padding: 0;
+  }
+  .country-detail {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    text-align:start;
+    padding: 0;
+  }
+
+  .country-info{
+    align-items: flex-start;
+    margin-left: 0;
+    max-width:100%;
+  }
+
+  h2{
+    text-align: center;
+  }
+
+  .country-flag{
+    align-items: center;
+  }
+
+  .country-flag img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 5px;
+  }
+
+  .country-stats {
+    grid-template-columns: 2fr;
+    align-items:flex-start;
+  }
+
+  .back-button{
+    margin-left: 0;
+    margin-top: 10px;
+  }}
+
+/* Загрузка и ошибки */
+.loading,
+.error {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.back-button {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 5px 20px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  border: 1px solid #ddd;
+  /* Цвет границы кнопок */
+}
+
+.back-button i {
+  margin-right: 8px;
+  /* Отступ иконки от текста */
+}
+
+a {
+  text-decoration: none;
+}
+
+button.border-country.dark-mode {
+  background-color: hsl(209, 23%, 22%);
+}
+
+#root.dark-mode{
+  background-color: hsl(207, 26%, 17%);
+}
