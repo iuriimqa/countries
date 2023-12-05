@@ -42,9 +42,8 @@
 
 .country-flag img {
   display: block;
-  /* Убедитесь, что изображение не имеет встроенных отступов */
   width: 400px;
-  /* Ширина изображения флага */
+  /* flag witdh */
   height: 300px;
   object-fit: fill;
   margin-bottom: 20px;
@@ -99,16 +98,16 @@
 .borders-list button {
   padding: 5px 15px;
   background-color: #f7f7f7;
-  /* Цвет фона кнопок */
+  /* color of buttons */
   border: 1px solid #ddd;
-  /* Цвет границы кнопок */
+  /* color of button's borders */
   border-radius: 5px;
-  /* Скругление углов кнопок */
+  /* round border of buttons */
   cursor: pointer;
   font-size: 0.8rem;
 }
 
-/* Добавьте медиа-запросы для адаптивного дизайна */
+/* adaptive design mobile view*/
 @media (max-width: 768px) {
   .container{
     margin: 0;
@@ -172,12 +171,10 @@
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   border: 1px solid #ddd;
-  /* Цвет границы кнопок */
 }
 
 .back-button i {
   margin-right: 8px;
-  /* Отступ иконки от текста */
 }
 
 a {
