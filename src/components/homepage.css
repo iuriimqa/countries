@@ -108,25 +108,25 @@ span {
 
 .filter select {
   padding: 15px 20px;
-  /* Отступы внутри select */
+  
   background-color: hsl(0, 0%, 100%);
-  /* Белый фон */
+  
   border: none;
-  /* Убрать границу */
+  
   border-radius: 5px;
-  /* Скругление углов */
+  
   box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.05);
-  /* Тень для выпадающего списка */
+  
   appearance: none;
-  /* Убрать стандартный вид для select */
+  
   -moz-appearance: none;
   -webkit-appearance: none;
   font-size: 14px;
-  /* Размер шрифта */
+  
   color: hsl(200, 15%, 8%);
-  /* Цвет шрифта */
+  
   cursor: pointer;
-  /* Курсор в виде указателя */
+  
 }
 
 .filter::after {
@@ -135,27 +135,26 @@ span {
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
-  /* Стрелка не будет взаимодействовать с курсором */
   color: hsl(200, 15%, 8%);
-  /* Цвет стрелки */
+  
   -webkit-appearance: none;
-  /* Для Safari и Chrome */
+  
   -moz-appearance: none;
-  /* Для Firefox */
+  
   appearance: none;
 }
 
-/* Стиль для option */
+
 .filter select option {
   padding: 10px;
-  /* Отступы внутри option */
+  
   background-color: hsl(0, 0%, 100%);
-  /* Белый фон */
+  
   color: hsl(200, 15%, 8%);
-  /* Цвет текста */
+  
 }
 
-/* Медиа-запросы для адаптивности */
+/* media quires */
 @media (max-width: 768px) {
   .filter {
     display: flex;
@@ -178,25 +177,25 @@ span {
 }
 
 .filter select {
-  /* Прежние стили */
+  
   position: relative;
   width: 200px;
-  /* Или другая фиксированная ширина, если нужно */
+  
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  /* Остальные стили */
+  
 }
 
-/* Стиль для пунктов select */
+
 .filter select option {
   color: #000;
-  /* Черный текст для пунктов */
+  
   background: white;
-  /* Белый фон для пунктов */
+  
   padding: 10px;
-  /* Отступы внутри пунктов */
+  
 }
 
  .filter::after {
@@ -208,37 +207,37 @@ span {
   pointer-events: none;
   color: #444;
   -webkit-appearance: none;
-  /* Для Safari и Chrome */
+  /* Safari и Chrome */
   -moz-appearance: none;
-  /* Для Firefox */
+  /* Firefox */
   appearance: none;
 }
 
-/* Позиционирование фильтра и поиска в одной линии */
+
 .search-and-filter-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
   -webkit-appearance: none;
-  /* Для Safari и Chrome */
+  /* Safari и Chrome */
   -moz-appearance: none;
-  /* Для Firefox */
+  /* Firefox */
   appearance: none;
 }
 
 
 
-/* Стиль для контейнера фильтра, если вы хотите использовать flexbox */
+
 .filter {
-  /* Прежние стили */
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
   -webkit-appearance: none;
-  /* Для Safari и Chrome */
+  /* Safari и Chrome */
   -moz-appearance: none;
-  /* Для Firefox */
+  /* Firefox */
   appearance: none;
 
 }
@@ -255,9 +254,9 @@ span {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   -webkit-appearance: none;
-  /* Для Safari и Chrome */
+  /* Safari и Chrome */
   -moz-appearance: none;
-  /* Для Firefox */
+  /* Firefox */
   appearance: none;
 }
 
@@ -271,9 +270,9 @@ span {
   color: #333;
   padding: 5px 10px;
   -webkit-appearance: none;
-  /* Для Safari и Chrome */
+  /* Safari и Chrome */
   -moz-appearance: none;
-  /* Для Firefox */
+  /* Firefox */
   appearance: none;
 }
 
