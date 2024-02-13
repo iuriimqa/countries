@@ -68,7 +68,6 @@ function HomePage() {
   const navigate = useNavigate();
 
   const handleCountryClick = (country) => {
-    // Если общее название страны 'United States', используем официальное название для запроса
     const countryQuery = country.name.common === 'United States' ? country.name.official : country.name.common;
     navigate(`/country/${encodeURIComponent(countryQuery)}`);
 };
